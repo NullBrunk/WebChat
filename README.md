@@ -35,11 +35,11 @@ https://user-images.githubusercontent.com/106782577/179044206-fa848320-a9e4-4232
 
 # Pages :
 
-- index.php -> the index   
-- login.php -> page to login to an account, same page for admins and users    
-- signup.php -> The page to create a basic user account with low privs   
-- user.php -> the page of basic users    
-- panel.php -> when the 'isadmin' column is set to '1' in the DB, the user is not redirected to user.php but to panel.php with the session cookie isadmin on 1   
+- index.php -> Simple index page.    
+- login.php -> This is the page to login to any account of the DB.       
+- signup.php -> The page to create a basic user account with low privileges.             
+- user.php -> The page of the basics users.      
+- panel.php -> When the 'isadmin' column is set to '1' in the DB, the user is not redirected to user.php but to panel.php with the session cookie isadmin equal to 1.   
 
 
 ## Notes
