@@ -5,14 +5,11 @@ A basic online chat created using PHP and MySQL
 
 ## Regular user :
 
+https://user-images.githubusercontent.com/106782577/179043475-ef508cc8-41da-4c71-8737-80460b613ef4.mp4
 
-https://user-images.githubusercontent.com/106782577/179040352-59c8d8a3-f018-4797-8ac8-f5d2f5cc1472.mp4
 
 ## Admin user :
 
-
-
-https://user-images.githubusercontent.com/106782577/179040410-6d645783-906b-46e7-926d-51ea233b80e3.mp4
 
 
 
