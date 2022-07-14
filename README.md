@@ -20,17 +20,17 @@ https://user-images.githubusercontent.com/106782577/179040410-6d645783-906b-46e7
 
 ### Regular user :
 
--**Delete his own message**
--**Post message**
--**Can bee banned**
+- **Delete his own message**  
+- **Post message**      
+- **Can bee banned**      
 
 ### Admin :
 
--**Delete all the message**
--**Post message**
--**Ban users (supress them from the database)**
--**Can see the content of the DB**
--**Can give admin privs to users**
+- **Delete all the message**   
+- **Post message**   
+- **Ban users (supress them from the database)**   
+- **Can see the content of the DB**    
+- **Can give admin privs to users**   
 
 
 # Pages :
