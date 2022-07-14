@@ -71,13 +71,8 @@ CREATE TABLE `forum`
 );
 ```
 
-**You can then create an admin user like this :**
+**You can then create the first admin user with this :**
 
 ```sql
 INSERT INTO `users`(username,password,isadmin) VALUES ('adminusername','adminpassword',1);
 ```
-or use this 
-![image](https://user-images.githubusercontent.com/106782577/179045907-94c36892-ae6d-469c-af25-82ad64ad9a1c.png)
-in the admin section to give privileges
-
-To create a basic user, use the signup.php page.
