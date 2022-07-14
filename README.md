@@ -35,16 +35,16 @@ https://user-images.githubusercontent.com/106782577/179040410-6d645783-906b-46e7
 
 # Pages :
 
--index.php -> the index
--login.php -> page to login to an account, same page for admins and users
--signup.php -> The page to create a basic user account with low privs
--user.php -> the page of basic users
--panel.php -> when the 'isadmin' column is set to '1' in the DB, the user is not redirected to user.php but to panel.php with the session cookie isadmin on 1
+- index.php -> the index   
+- login.php -> page to login to an account, same page for admins and users    
+- signup.php -> The page to create a basic user account with low privs   
+- user.php -> the page of basic users    
+- panel.php -> when the 'isadmin' column is set to '1' in the DB, the user is not redirected to user.php but to panel.php with the session cookie isadmin on 1   
 
 
 ## Notes
 
-There is 2 tables :
+There is 2 tables to create :
 ```sql
 CREATE TABLE `users`
 (
@@ -74,11 +74,4 @@ CREATE TABLE `forum`
 
 ```sql
 INSERT INTO `users`(username,password,isadmin) VALUES ('adminusername','adminpassword',1);
-```
-
-
-**Create a regular user**
-
-```sql
-INSERT INTO `users`(username,password) VALUES ('theusername','thepassword');
 ```
