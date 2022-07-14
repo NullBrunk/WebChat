@@ -55,7 +55,8 @@ CREATE TABLE `users`
 
     UNIQUE(`username`),
     PRIMARY KEY(`id`)
-);```
+);
+```
 
 and
 
