@@ -1,8 +1,6 @@
 # WebChat
 A basic online chat created using PHP and MySQL
 
-# Demo :
-
 ## Regular user :
 
 https://user-images.githubusercontent.com/106782577/179044220-663e2024-3756-4e73-9a30-9258b0889a5e.mp4
