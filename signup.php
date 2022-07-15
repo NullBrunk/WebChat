@@ -70,12 +70,12 @@ else{ // username or password is not set
     die;
 }
 
-if (str_contains($username, "'") or str_contains($username, '"') or str_contains($username, "--") or str_contains($username, "#") or str_contains($username, " ") ){
+if (str_contains($username, "/*") or str_contains($username, "'") or str_contains($username, '"') or str_contains($username, "--") or str_contains($username, "#") or str_contains($username, " ") ){
     echo("<p>Illegal character used in the username ! ( #,  --,  " .'",  '. "' or the space character ) </p>");
     die;
 }
 
-if (str_contains($password, "'") or str_contains($password, '"') or str_contains($password, "--") or str_contains($password, "#") or str_contains($password, " ") ){
+if (str_contains($username, "/*")  or str_contains($password, "'") or str_contains($password, '"') or str_contains($password, "--") or str_contains($password, "#") or str_contains($password, " ") ){
     echo("<p>Illegal character used in the password !( #,   --,  " .   '",   '. "' or the space character ) </p>");
     die;
 }
