@@ -9,12 +9,12 @@ error_reporting(E_ALL);
 
 function search($username, $password, $isadmin){
 
-    if (str_contains($username, "'") or str_contains($username, '"') or str_contains($username, "--") or str_contains($username, "#") or str_contains($username, " ") ){
+    if (str_contains($username, "/*") or str_contains($username, "'") or str_contains($username, '"') or str_contains($username, "--") or str_contains($username, "#") or str_contains($username, " ") ){
         echo("<p>Illegal character used</p>");
         die;
     }
     
-    if (str_contains($password, "'") or str_contains($password, '"') or str_contains($password, "--") or str_contains($password, "#") or str_contains($password, " ") ){
+    if (str_contains($username, "/*") or str_contains($password, "'") or str_contains($password, '"') or str_contains($password, "--") or str_contains($password, "#") or str_contains($password, " ") ){
         echo("<p>Illegal character used</p>");
         die;
     }
