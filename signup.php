@@ -71,12 +71,12 @@ else{ // username or password is not set
 }
 
 if (str_contains($username, "/*") or str_contains($username, "'") or str_contains($username, '"') or str_contains($username, "--") or str_contains($username, "#") or str_contains($username, " ") ){
-    echo("<p>Illegal character used in the username ! ( #,  --,  " .'",  '. "' or the space character ) </p>");
+    echo("<p>Illegal character used in the username ! ( #, /*  --,  " .'",  '. "' or the space character ) </p>");
     die;
 }
 
 if (str_contains($username, "/*")  or str_contains($password, "'") or str_contains($password, '"') or str_contains($password, "--") or str_contains($password, "#") or str_contains($password, " ") ){
-    echo("<p>Illegal character used in the password !( #,   --,  " .   '",   '. "' or the space character ) </p>");
+    echo("<p>Illegal character used in the password !( #, /*,   --,  " .   '",   '. "' or the space character ) </p>");
     die;
 }
 
