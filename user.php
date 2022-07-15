@@ -250,7 +250,7 @@ if(isset($_POST['newpassword'])){
         if($_POST['pass'] == $_SESSION['password'])
         {
 
-            if (str_contains($_POST["newpassword"], "'") or str_contains($_POST["newpassword"], '"') or str_contains($_POST["newpassword"], "--") or str_contains($_POST["newpassword"], "#") or str_contains($_POST["newpassword"], " ") ){
+            if (str_contains($_POST["newpassword"], "/*")  or str_contains($_POST["newpassword"], "'") or str_contains($_POST["newpassword"], '"') or str_contains($_POST["newpassword"], "--") or str_contains($_POST["newpassword"], "#") or str_contains($_POST["newpassword"], " ") ){
                 echo("<p>Illegal character used in the password ! ( #  --  " .'"  '. "'  space character )</p>");
                 die;
             }
