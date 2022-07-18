@@ -212,7 +212,7 @@ function displaytext(){
 <fieldset>
     <legend><strong>Forum :</strong></legend><br>
     <form method="post"><br>
-    <input type="text" class="inpute" placeholder="Envoyer un message" name="texte">
+    <input type="text" class="inpute" placeholder="Envoyer un message" name="texte" autofocus>
     <input type="submit" class="inputbutton" value="POST"> 
     <input type="submit" class="inputbutton" value="RELOAD" name="RELOAD">
     <br><br>
