@@ -145,7 +145,7 @@ function displaytext(){
                     if(!$ping)
                         echo htmlspecialchars($c[$a]);
                     else{
-                        echo '<strong style="color: red;">' . htmlspecialchars($c[$a]);
+                        echo '<mark style="color: black; background-color: #bd8a08; border-radius: 5px;"> ' . htmlspecialchars($c[$a]) .' ';
                     }
                 }
                 catch(Exception $e)
@@ -153,7 +153,7 @@ function displaytext(){
                     echo("");
                 }
                 if ($a == 0 AND $c[$a])
-                    echo " </strong><strong>> </strong>";
+                    echo " </strong></mark><strong>> </strong>";
             }
               
             echo "</pre>";
