@@ -359,7 +359,7 @@ function deletemsg($id){
 
 
     <form method="post"><br>
-            <input class="inpute" type="text" placeholder="Envoyer un message" name="texte">
+            <input class="inpute" type="text" placeholder="Envoyer un message" name="texte" autofocus>
             <input class="inputbutton" type="submit" value="POST"> 
             <input type="submit" class="inputbutton" value="RELOAD" name="RELOAD">
         </form>
