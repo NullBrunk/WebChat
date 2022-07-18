@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 require 'db-config.php';
 
@@ -113,41 +115,52 @@ function displaytext(){
     }
 
     $PDO = new PDO($DB_DSN, $DB_USER, $DB_PASS);
-    $request = $PDO -> query('SELECT * FROM forum');
+    $request = $PDO -> query('SELECT * FROM forum ORDER BY `id` DESC LIMIT 15;');
 
 
     echo("<strong>");
 
-    $b = 0;
-    $c = [];
-
-    foreach($request as $re)
-    {    
-        array_push($c, $re);
-    }
-    $calc = (sizeof($c)-1) - 20;
-    for($i=sizeof($c)-1; $i>$calc; $i--)
+    foreach($request as $c)
     {    
             echo("<pre>");
+            // Capitalize
+
+
             for($a=0; $a<2; $a++)
             {
+                if ($a==0){
+                    if (strtolower($c[$a]) == strtolower($_SESSION['username'])){
+                        echo('<strong style="color: #cd7f7f;">');
+                    }
+
+                    $c[$a] = strtolower(htmlspecialchars($c[$a]));
+                    str_split($c[$a]);
+                    $c[$a][0] = strtoupper($c[$a][0]);
+  
+                }
 
                 try{
-                    echo htmlspecialchars($c[$i][$a]);
+                    $ping = str_contains(strtolower($c[$a]), strtolower("@".$_SESSION['username']));
+
+                    if(!$ping)
+                        echo htmlspecialchars($c[$a]);
+                    else{
+                        echo '<strong style="color: red;">' . htmlspecialchars($c[$a]);
+                    }
                 }
                 catch(Exception $e)
                 {
                     echo("");
                 }
-                if ($a == 0 AND $c[$i][$a])
-                    echo " > </strong>";
+                if ($a == 0 AND $c[$a])
+                    echo " </strong><strong>> </strong>";
             }
               
             echo "</pre>";
             echo("<strong>");
             $req = $PDO -> prepare("SELECT * FROM `forum` WHERE id=:id AND author=:username;");
             $req -> execute(array(
-                "id" => $c[$i][2],
+                "id" => $c[2],
                 "username" => $_SESSION['username']
             ));
 
@@ -163,14 +176,13 @@ function displaytext(){
 
                     <form method="post">
                     <input type="image" src="trash.svg" name="DELETE">
-                    <input type="hidden" name="delete" value=' . $c[$i][2] . '>
+                    <input type="hidden" name="delete" value=' . $c[2] . '>
                     <strong></form>');
             
                 }
             }
 
 
-        $b++;
     }
 
 
@@ -207,8 +219,6 @@ if(!empty($_POST['RELOAD'])){
 else{
     if(!empty($_POST['texte'])){
 
-        $_POST['texte'] = str_replace("<", " ", $_POST['texte']);
-        $_POST['texte'] = str_replace(">", " ", $_POST['texte']);
         $PDO = new PDO($DB_DSN, $DB_USER, $DB_PASS);
 
         $req = $PDO -> prepare("INSERT INTO `forum`(text,author) VALUES (:text, :author);");
