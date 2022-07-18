@@ -92,10 +92,15 @@ function displaytext(){
                 try{
                     $ping = str_contains(strtolower($c[$a]), strtolower("@".$_SESSION['username']));
 
-                    if(!$ping)
+                    if(!$ping){
+                        $ping = str_contains(strtolower($c[$a]), "@everyone");
+                        if($ping)
+                            echo '<mark style="color: black; background-color: #bd8a08; border-radius: 5px;"> ' . htmlspecialchars($c[$a]) .' ';
+                        else
                         echo htmlspecialchars($c[$a]);
-                    else{
-                        echo '<strong><mark style="color: black; background-color: #bd8a08; border-radius: 5px;"> ' . htmlspecialchars($c[$a]) .' </strong>';
+                    }
+                        else{
+                            echo '<mark style="color: black; background-color: #bd8a08; border-radius: 5px;"> ' . htmlspecialchars($c[$a]) .' ';
                     }
                 }
                 catch(Exception $e)
