@@ -85,13 +85,17 @@ function displaytext(){
   
                 }
 
+                if($a==1){
+                    echo('</strong>');
+                }
+
                 try{
                     $ping = str_contains(strtolower($c[$a]), strtolower("@".$_SESSION['username']));
 
                     if(!$ping)
                         echo htmlspecialchars($c[$a]);
                     else{
-                        echo '<strong style="color: red;">' . htmlspecialchars($c[$a]);
+                        echo '<strong><mark style="color: black; background-color: #bd8a08; border-radius: 5px;"> ' . htmlspecialchars($c[$a]) .' </strong>';
                     }
                 }
                 catch(Exception $e)
@@ -99,7 +103,7 @@ function displaytext(){
                     echo("");
                 }
                 if ($a == 0 AND $c[$a])
-                    echo " </strong><strong>> </strong>";
+                    echo " </strong></mark><strong>> </strong>";
             }
               
             echo "</pre>";
