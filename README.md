@@ -23,10 +23,10 @@ and
 ```sql
 CREATE TABLE `forum`
 (
-    `id` SMALLINT AUTO_INCREMENT,
     `author` VARCHAR(65) NOT NULL,
     `text` TEXT NOT NULL,
-  
+    `id` SMALLINT AUTO_INCREMENT,
+ 
     PRIMARY KEY(`id`)
 );
 ```
