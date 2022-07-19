@@ -1,0 +1,161 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+fieldset
+{
+    background-color: rgba(30, 30, 30, 0.824);
+    border:2px solid white;
+    border-radius: 4px;
+    padding: 1rem;
+    
+}
+
+html{
+    background-color: rgb(0, 0, 0);
+}
+legend{
+    color:aliceblue;
+    font-size: x-large;
+}
+
+h1{
+    color:azure;
+}
+
+pre{
+    color: blanchedalmond;
+    font-size: large;
+}
+
+p{
+    font-size: x-large;
+    color:aliceblue;
+}
+
+.inpute
+{
+    background-color: #000000;
+    border-radius: 5px;
+    border: 1px double #cccccc;
+    color: #eeeeee;
+    text-align: left;
+    font-size: 25px;
+    margin-right: 3px;
+    padding: 18px;
+    height: 27px;
+    width: 700px;
+}
+.inputbutton
+{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px double #cccccc;
+    color: #000000;
+    text-align: center;
+    margin-right: 3px;
+    margin-left: 3px;
+    font-size: 22px;
+    padding: 13px;
+    height: 70px;
+    width: 140px;
+}
+
+.chatbutton
+{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px double #cccccc;
+    color: #000000;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    width: 130px;
+}
+
+.chatttttbutton
+{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px double #cccccc;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    padding: 12px;
+    width: 130px;
+}
+
+
+.centerfield{
+    display: center;
+    text-align: center;
+    padding:40px;	
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+
+.centerfielddd{
+    height: 35.5rem;
+    overflow: auto;
+}
+
+.centerfieldd{
+    height: 37rem;
+    overflow: auto;
+}
+
+
+
+.centerh{
+    margin-top: 3px;
+    text-align: center;
+    font-size: 80px;
+}
+
+.centerfield_login{
+    display: flex;
+    justify-content:center;
+    text-justify: auto;
+    width:55%;
+    padding-top:5%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    /*margin-left:25%;*/
+    text-align: center;
+    
+}
+
+.bodyclass
+{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+html
+{
+    
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.imagegrande
+{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 130%;
+}
+
+.imagegraande
+{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
