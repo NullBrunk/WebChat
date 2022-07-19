@@ -1,12 +1,6 @@
 # WebChat
 
-![image](https://user-images.githubusercontent.com/106782577/179045660-c9d4dea8-d606-4086-8c22-aab2a0abbc97.png)
-the index.php
-
-# Ping system 
-
-![image](https://user-images.githubusercontent.com/106782577/179563554-b3dce841-6901-448c-ac80-bd4f044cbb45.png)
-
+![image](https://user-images.githubusercontent.com/106782577/179762868-ce09f7c7-5acb-416b-80de-16bf0e919a58.png)
 
 # Personnal notes : 
 
