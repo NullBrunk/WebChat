@@ -31,7 +31,7 @@ sudo chmod 777 /var/www/html/*
 ```
 sudo systemctl enable --now php-fpm httpd mysqld
 ```
-Open your browser and type *127.0.0.1*.
+Open your browser and type http://127.0.0.1/.
 
 ## You see something like "permission denied"
 
