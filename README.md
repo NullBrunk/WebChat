@@ -23,7 +23,7 @@ cd /var/www/html
 sudo git clone https://github.com/NullBrunk/WebChat
 sudo mv WebChat/* .
 sudo rm -r WebChat
-sudo chown $USER:$USER *
+sudo chmod 777 /var/www/html/*
 ```
 
 # Launch services :
