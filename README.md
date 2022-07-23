@@ -26,10 +26,24 @@ sudo rm -r WebChat
 sudo chown $USER:$USER *
 ```
 
-**It is possible that SELinux block httpd, if you see something like "permission denied", type this :**
+# Launch services :
+
+```
+sudo systemctl enable --now php-fpm httpd mysqld
+```
+Open your browser and type *127.0.0.1*.
+
+## You see something like "permission denied"
+
+SELinux is probably blocking HTTPd, please type this :
 ```
 sudo setsebool -P httpd_unified 1
 ```
+Then, for good practice, restart all the services : **
+```
+sudo systemctl restart --now php-fpm httpd mysqld
+```
+And retry opening 127.0.0.1 in your browser.
 
 # Configuration of mysql
 
