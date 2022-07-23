@@ -2,9 +2,17 @@
 
 WebChat written in PHP with PDO, mysql and JavaScript for the backend, HTML-CSS for the front.
 
+Index
+- <a href="">Demo</a>
+- <a href="">Permissions</a>
+- <a href="">Installation (fedora36)</a>
+
+# Demo :
 Index page:
+
 ![image](https://user-images.githubusercontent.com/106782577/179762868-ce09f7c7-5acb-416b-80de-16bf0e919a58.png) 
 Video :      
+
 https://user-images.githubusercontent.com/106782577/180606625-56e67985-1057-41ce-81fb-96386b0a5eb0.mp4
 
 
@@ -109,3 +117,4 @@ INSERT INTO `users`(username,password,isadmin) VALUES ('THE_ADMIN_USERNAME','THE
 
 ## All is ok
 If you don't got any error, try to go to http://127.0.0.1/ and see if all work.
+
