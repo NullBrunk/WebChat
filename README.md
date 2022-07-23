@@ -33,7 +33,7 @@ sudo systemctl enable --now php-fpm httpd mysqld
 ```
 Open your browser and type http://127.0.0.1/.
 
-## You see something like "permission denied"
+### If you see something like "permission denied"
 
 SELinux is probably blocking HTTPd, please type this :
 ```
@@ -44,6 +44,7 @@ Then, for good practice, restart all the services : **
 sudo systemctl restart --now php-fpm httpd mysqld
 ```
 And retry opening 127.0.0.1 in your browser.
+
 
 # Configuration of mysql
 
