@@ -28,23 +28,17 @@ sudo chmod 777 /var/www/html/*
 
 # Launch services :
 
-```
-sudo systemctl enable --now php-fpm httpd mysqld
-```
-Open your browser and type http://127.0.0.1/.
 
-### If you see something like "permission denied"
-
-SELinux is probably blocking HTTPd, please type this :
+SELinux will probably block HTTPd, please type this :
 ```
 sudo setsebool -P httpd_unified 1
 ```
-Then, for good practice, restart all the services : 
-```
-sudo systemctl restart --now php-fpm httpd mysqld
-```
-And retry opening 127.0.0.1 in your browser.
 
+Then enable all the services :
+
+```
+sudo systemctl enable --now php-fpm httpd mysqld
+```
 
 # Configuration of mysql
 
@@ -91,3 +85,6 @@ CREATE TABLE `forum`
 ```sql
 INSERT INTO `users`(username,password,isadmin) VALUES ('THE_ADMIN_USERNAME','THE_ADMIN_PASSWORD',1);
 ```
+
+# All is ok
+If you don't got any error, try to go to http://127.0.0.1/ and see if all work.
