@@ -33,7 +33,7 @@ sudo setsebool -P httpd_unified 1
 
 # Configuration of mysql
 
-**First go to /var/www/html and edit the db-access.php, put your password, and save the file.**     
+**First go to /var/www/html and edit the db-config.php, put the password that you set when you type mysql_secure_installation instead of `YOUR_MYSQL_PASSWORD`, and save the file.**     
 
 
 Connect to mysql using ``mysql -uMYSQL_USERNAME -pMYSQL_PASSWORD`` (mysql username will probably be root). Then lets create the db, the tables, and a root user.
