@@ -2,7 +2,7 @@
 
 WebChat written in PHP with PDO, mysql and JavaScript for the backend, HTML-CSS for the front.
 
-Index
+Index :
 - <a href="">Demo</a>
 - <a href="">Permissions</a>
 - <a href="">Installation (fedora36)</a>
