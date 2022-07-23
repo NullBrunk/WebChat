@@ -39,7 +39,7 @@ SELinux is probably blocking HTTPd, please type this :
 ```
 sudo setsebool -P httpd_unified 1
 ```
-Then, for good practice, restart all the services : **
+Then, for good practice, restart all the services : 
 ```
 sudo systemctl restart --now php-fpm httpd mysqld
 ```
