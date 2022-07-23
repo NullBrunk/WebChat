@@ -1,14 +1,31 @@
 # WebChat
 
-Index page     
-![image](https://user-images.githubusercontent.com/106782577/179762868-ce09f7c7-5acb-416b-80de-16bf0e919a58.png)
- 
+# Index 
+- <a href="">Demo</a>
+- <a href="">Permissions</a>
+- <a href="">Installation (fedora36)</a>
+
+
+# Demo :
+Index pahe:
+![image](https://user-images.githubusercontent.com/106782577/179762868-ce09f7c7-5acb-416b-80de-16bf0e919a58.png) 
 Video :      
-
-
-
 https://user-images.githubusercontent.com/106782577/180606625-56e67985-1057-41ce-81fb-96386b0a5eb0.mp4
 
+
+# Permissions 
+
+**Users**
+- Can only clear his messages and have not access to the !clear command
+- Can ping users and admins
+- Can write in the chat
+- Can change his password
+
+**Admin**
+- Can read the database
+- Can ban users (but not admins)
+- Can use !clear command and can delete the messages of all users (using the trash icon) 
+- Can ping and write in th chat
 
 
 # Install on fedora36 : 
@@ -35,7 +52,7 @@ sudo rm -r WebChat
 sudo chmod 777 /var/www/html/*
 ```
 
-# Launch services :
+## Launch services :
 
 
 SELinux will probably block HTTPd, please type this :
@@ -49,7 +66,7 @@ Then enable all the services :
 sudo systemctl enable --now php-fpm httpd mysqld
 ```
 
-# Configuration of mysql
+## Configuration of mysql
 
 **First go to /var/www/html and edit the db-config.php, put the password that you set when you type mysql_secure_installation instead of `YOUR_MYSQL_PASSWORD`, and save the file.**     
 
@@ -95,5 +112,5 @@ CREATE TABLE `forum`
 INSERT INTO `users`(username,password,isadmin) VALUES ('THE_ADMIN_USERNAME','THE_ADMIN_PASSWORD',1);
 ```
 
-# All is ok
+## All is ok
 If you don't got any error, try to go to http://127.0.0.1/ and see if all work.
